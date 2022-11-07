@@ -8,7 +8,6 @@ public class CoktanSecmeliSorular extends Sorular{
 	private String bSikki;
 	private String cSikki;
 	private String dSikki;
-//	private Vector<CoktanSecmeliSorular> coktanSecmeliSoruBankasi = new Vector<CoktanSecmeliSorular>();
 	public CoktanSecmeliSorular() {
 		super();
 		// TODO Auto-generated constructor stub

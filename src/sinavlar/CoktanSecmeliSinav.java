@@ -29,13 +29,6 @@ public class CoktanSecmeliSinav extends Sinavlar {
 		}
 	}
 	
-//	public void soruVeSiklariYazdir(CoktanSecmeliSorular soru) {
-//		soru.soruYazdir(soru);
-//		System.out.println("a)" + soru.getaSikki());
-//		System.out.println("b)" + soru.getbSikki());
-//		System.out.println("c)" + soru.getcSikki());
-//		System.out.println("d)" + soru.getdSikki());
-//	}
 	
 	@Override
 	public void sinavSorulariGetir() {
@@ -43,12 +36,6 @@ public class CoktanSecmeliSinav extends Sinavlar {
 		for(Sorular soru : sinavSorulari) {
 			if(soru instanceof CoktanSecmeliSorular) {
 				((CoktanSecmeliSorular) soru).soruVeSiklariYazdir((CoktanSecmeliSorular) soru);
-				
-//				String cevap = cevapVer();
-//				verilenCevaplar.add(cevap);
-//				if(cevap.equals(soru.getDogruCevap())) {
-//					alinanPuan += soru.getPuan();
-//				}
 				
 				alinanPuan += puanAlindiMi(soru);
 			}

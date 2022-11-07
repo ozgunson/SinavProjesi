@@ -87,19 +87,11 @@ public abstract class Sinavlar {
 		return puan;
 	}
 	
-//	public void soruYazdir(Sorular soru) {
-//		System.out.println(soru.getSoruMetni());
-//		System.out.println("puan:" + soru.getPuan());
-//		System.out.println("zorluk derecesi:" + soru.getZorlukDerecesi());
-//	}
-	
 	public abstract void sinavSorulariGetir();
 	
 	public void sinavSorulariGoster() {
 		for(Sorular soru : sinavSorulari) {
 			System.out.println(soru);
-//			String something = scanner.nextLine();
-//			verilenCevaplar.add(something);
 		}
 		System.out.println(toplamPuan);
 	}

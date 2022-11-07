@@ -96,10 +96,6 @@ public abstract class Sorular implements Comparable<Sorular>{
 		soruCikar(soruBankasi.get(id));		
 	}
 	
-	
-	
-	// getters and setters
-	
 	@Override
 	public String toString() {
 		return "Sorular [soruMetni=" + soruMetni + ", puan=" + puan + ", zorlukDerecesi=" + zorlukDerecesi
